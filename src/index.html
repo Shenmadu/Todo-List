@@ -1,10 +1,37 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <title></title>
-  </head>
-  <body>
-    Todos
-  </body>
+
+<head>
+  <meta charset="utf-8">
+  <title>ToDoList</title>
+  <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css">
+</head>
+
+<body>
+  <div class="container ">
+    <div class="row g-3 justify-content-center">
+     
+      <div class="col-auto">
+        <label for="inputPassword2" class="visually-hidden">To do</label>
+        <input type="Text" class="form-control" id="inputTask" placeholder="Enter Task">
+      </div>
+      <div class="col-auto">
+        <button onclick="taskAdd()" class="btn btn-primary mb-3">Add</button>
+      </div>
+    </div>
+
+    
+    <ul>
+      <li id="task-add"></li>
+    </ul>
+
+
+  </div>
+
+
+
+  <script src="../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+  <script src="./home.js"></script>
+</body>
+
 </html>
