@@ -10,10 +10,7 @@ function taskAdd() {
     doneBtn.textContent = "Done";
     doneBtn.classList.add("done-btn")
 
-    doneBtn.addEventListener('click', function () {
-        li.classList.toggle("completed")
-
-    })
+   
    
     doneBtn.addEventListener('click', ()=> {
         li.remove();
